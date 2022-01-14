@@ -45,7 +45,7 @@ header {
     font-weight: 700;
 }
 
-/* Trois Desserts*/
+/*************** Trois Desserts *****************/
 
 #home-desserts {
     padding-top: 100px;
@@ -53,7 +53,7 @@ header {
     border-top: 1px solid black;
 }
 
-/*Call to action*/
+/********** Parallax *************/
 
 #start {
     position: relative;
@@ -87,38 +87,78 @@ header {
 
 /*MEDIA QUERIES*/
 
+@media screen and (max-width: 900px) {
+    .text-intro {
+        padding-top: 100px;
+    }
+
+    .preTxt {
+        font-size: 50px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     header {
-        height: 60vh;
+        height: 70vh;
     }
+
     .text-intro {
-        padding-top: 10px;
+        padding-top: 100px;
     }
+
+    .preTxt {
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header {
+        height: 70vh;
+    }
+
+    .text-intro {
+        padding-top: 100px;
+    }
+
     .preTxt {
         font-size: 30px;
     }
+
     h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .preTxt {
-        font-size: 10px;
-    }
-    h1 {
         font-size: 20px;
     }
+
+    h1 {
+        font-size: 30px;
+    }
+
     .text-intro a {
         transform: scale(0.8);
     }
+
     #home-icons {
         padding-top: 80px;
         padding-bottom: 60px;
     }
+
     #txtLaptop {
         padding-bottom: 30px;
     }
+
     #equipes {
         padding-bottom: 35px;
     }
